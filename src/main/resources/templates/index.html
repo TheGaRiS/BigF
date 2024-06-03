@@ -13,7 +13,10 @@
     <div class="container">
         <h1 class="mb-4">Homepage</h1>
         <p class="mb-5 js-greeting">Hello World!</p>
-        <button>Change greeting</button>
+        <button th:hx-post="@{/furtherInfo}"
+                hx-trigger="click"
+                hx-target=".js-greeting"
+                hx-swap="outerHTML">Change</button>
     </div>
 </main>
 </body>
