@@ -12,7 +12,7 @@
 <main class="my-5">
     <div class="container">
         <h1 class="mb-4">Homepage</h1>
-        <p class="mb-5 js-greeting">Hello World!</p>
+        <p class="mb-5 js-greeting" th:text="${types}">Hello World!</p>
         <button th:hx-post="@{/furtherInfo}"
                 hx-trigger="click"
                 hx-target=".js-greeting"
